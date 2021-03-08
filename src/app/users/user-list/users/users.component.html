@@ -1,0 +1,28 @@
+<table class="table table-bordered">
+  <thead>
+  <tr>
+    <th>Id</th>
+    <th>Nome</th>
+    <th>login</th>
+    <th>email</th>
+    <th>admin</th>
+    <th></th>
+    <th></th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let user of users" class="clickable-row">
+    <td>{{ user.id }}</td>
+    <td>{{ user.name }}</td>
+    <td>{{ user.login }}</td>
+    <td>{{ user.email }}</td>
+    <td>{{ user.admin }}</td>
+    <td>
+      <button class="btn btn-primary btn-block">Atualizar</button>
+    </td>
+    <td>
+      <button class="btn btn-primary btn-block">Deletar</button>
+    </td>
+  </tr>
+  </tbody>
+</table>
